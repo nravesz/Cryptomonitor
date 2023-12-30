@@ -1,0 +1,39 @@
+.container{
+    display:flex;
+    background-color: #30353e;
+}
+.billetera-container{
+    margin-left:20vw;
+    height:100vh;
+    width:80%
+}
+.header{
+    padding:20px;
+    color:white;
+}
+
+.amount{
+    font-size:x-large;
+    color: aquamarine;
+    margin-left:5px;
+    margin-top:-5px;
+}
+
+.wallet-currency{
+    list-style-type: none;
+    padding:20px;
+    background-color: #24282e;
+    border-radius: 10px;
+    margin:5px;
+    overflow: hidden;
+}
+
+.header{
+    overflow: hidden;
+    display:flex;
+    width:100% !important;
+    flex-flow: row wrap;
+}
+.active-container{
+    width:100% !important;
+}

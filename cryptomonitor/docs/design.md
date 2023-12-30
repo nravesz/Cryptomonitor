@@ -1,0 +1,4 @@
+### RuleParser
+Esta clase es la encargada de levantar un archivo JSON de configuración de una Regla y parsearlo, validando que estén presentes todos los cmapos mínimos necesarios en el proceso.
+Si bien esta clase valida la presencia de los atributos necesarios, no valida el valor de dichos campos y su compatibilidad entre sí. Esa responsabilidad es delegada a otra entidad que cree las Reglas (Rules) propiamente dichas. De esta manera se mantiene la Single Responsability de la clase.
+El tipo de objeto que devuelve el RuleParser es una ParsedRule, es decir, el mapeo 1:1 de los pares clave valor del archivo JSON original, cargado en memoria.

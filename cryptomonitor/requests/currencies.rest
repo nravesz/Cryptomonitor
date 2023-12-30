@@ -1,0 +1,2 @@
+GET http://localhost:3001/currencies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0

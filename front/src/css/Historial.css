@@ -1,0 +1,43 @@
+.container{
+    display:flex;
+}
+.header{
+    padding:20px;
+}
+.historial-container{
+    margin-left:20vw;
+    height:100vh;
+}
+
+.positive{
+    font-size:x-large;
+    color: rgb(96, 252, 107);
+    margin-left:5px;
+    margin-top:-5px;
+}
+
+.negative{
+    font-size:x-large;
+    color: rgb(255, 50, 50);
+    margin-left:5px;
+    margin-top:-5px;
+}
+
+.tran{
+    list-style-type: none;
+    display: flex;
+    padding:20px;
+    background-color: #24282e;
+    border-radius: 10px;
+    margin:5px;
+}
+
+.header{
+    overflow: hidden;
+    display:flex;
+    width:100% !important;
+    flex-flow: row wrap;
+}
+.active-container{
+    width:100% !important;
+}

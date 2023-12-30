@@ -1,0 +1,37 @@
+{
+    "requiredVariables": [
+        "LIMIT_VALUE_BTCUSDT"
+    ],
+    "rules": [{
+        "name": "Escape",
+        "condition": {
+            "type": "CALL",
+            "name": "<",
+            "arguments": [{
+                "type": "CALL",
+                "name": "LAST",
+                "arguments": {
+                    "type": "DATA",
+                    "symbol": "BTCUSDT",
+                    "from": 3600,
+                    "until": 0,
+                    "default": {
+                        "type": "VARIABLE",
+                        "name": "LIMIT_VALUE_BTCUSDT"
+                    }
+                }},{
+                "type": "VARIABLE",
+                "name": "LIMIT_VALUE_BTCUSDT"
+            }]            
+        },
+        "action": [{
+            "type": "SELL_MARKET",
+            "symbol": "BTCUSDT",
+            "amount": {
+                "type": "WALLET",
+                "symbol": "BTC"
+            }
+        }]
+    }]
+}
+    

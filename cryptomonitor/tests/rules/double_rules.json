@@ -1,0 +1,34 @@
+{
+    "rules": [
+        {
+            "name": "Comprar 12 TDD/USDT siempre (1)",
+            "condition": {
+                "type": "CONSTANT",
+                "value": true
+            },
+            "action": [{
+                "type": "BUY_MARKET",
+                "symbol": "TDD/USDT",
+                "amount": {
+                    "type": "CONSTANT",
+                    "value": 12
+                }
+            }]
+        },
+        {
+            "name": "Comprar 12 TDD/USDT siempre (2)",
+            "condition": {
+                "type": "CONSTANT",
+                "value": true
+            },
+            "action": [{
+                "type": "BUY_MARKET",
+                "symbol": "TDD/USDT",
+                "amount": {
+                    "type": "CONSTANT",
+                    "value": 12
+                }
+            }]
+        }
+    ]
+}

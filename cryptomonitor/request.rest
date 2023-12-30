@@ -1,0 +1,24 @@
+# Test the server
+GET http://localhost:3000/
+
+###
+
+# Test normal login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "password"
+}
+
+###
+
+# Test normal sign up
+POST http://localhost:3000/sign-up
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "password"
+}

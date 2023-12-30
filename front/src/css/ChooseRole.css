@@ -1,0 +1,35 @@
+.CR-container{
+    text-align: center;
+}
+
+.CR{
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.buttons-container{
+    display:flex;
+}
+
+.btn_container{
+    margin:50px;
+}
+
+.btn-img img{
+    border-radius: 50%;
+    border:none;
+}
+.btn-img img:hover{
+    opacity: 50%;
+}
+
+.btn-img{
+    border-radius: 70%;
+    border:none;
+    background-color: #282c34;
+}

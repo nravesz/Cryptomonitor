@@ -1,0 +1,17 @@
+{
+    "rules": [{
+        "name": "Comprar 1 ETHBUSD siempre",
+        "condition": {
+            "type": "CONSTANT",
+            "value": true
+        },
+        "action": [{
+            "type": "BUY_MARKET",
+            "symbol": "ETHBUSD",
+            "amount": {
+                "type": "CONSTANT",
+                "value": 12
+            }
+        }]
+    }]
+}

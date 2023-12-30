@@ -1,0 +1,34 @@
+{
+    "rules": [
+        {
+            "name": "Comprar 12 TDDUSDT siempre (1)",
+            "condition": {
+                "type": "CONSTANT",
+                "value": true
+            },
+            "action": [{
+                "type": "BUY_MARKET",
+                "symbol": "TDDUSDT",
+                "amount": {
+                    "type": "CONSTANT",
+                    "value": 12
+                }
+            }]
+        },
+        {
+            "name": "Comprar 12 TDDUSDT siempre (2)",
+            "condition": {
+                "type": "CONSTANT",
+                "value": true
+            },
+            "action": [{
+                "type": "BUY_MARKET",
+                "symbol": "TDDUSDT",
+                "amount": {
+                    "type": "CONSTANT",
+                    "value": 12
+                }
+            }]
+        }
+    ]
+}

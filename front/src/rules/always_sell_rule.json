@@ -1,0 +1,17 @@
+{
+    "rules": [{
+        "name": "Vender 15 BTCUSDT siempre",
+        "condition": {
+            "type": "CONSTANT",
+            "value": true
+        },
+        "action": [{
+            "type": "SELL_MARKET",
+            "symbol": "BTCUSDT",
+            "amount": {
+                "type": "CONSTANT",
+                "value": 15
+            }
+        }]
+    }]
+}

@@ -1,0 +1,67 @@
+GET http://localhost:3001/currencies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+###
+
+GET http://localhost:3001/monitored-currencies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+###
+
+POST http://localhost:3001/monitored-currencies
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+Content-Type: application/json
+
+{
+    "currency": "ethereum"
+}
+###
+
+POST http://localhost:3001/monitored-currencies/subscribe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+Content-Type: application/json
+
+{
+    "currency": "btcusdt"
+}
+###
+
+POST http://localhost:3001/monitored-currencies/subscribe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+Content-Type: application/json
+
+{
+    "currency": "etheur"
+}
+###
+
+POST http://localhost:3001/monitored-currencies/unsubscribe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+Content-Type: application/json
+
+{
+    "currency": "btcusdt"
+}
+###
+
+POST http://localhost:3001/monitored-currencies/unsubscribe
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsQGdtYWlsLmNvbSIsImlhdCI6MTY2OTQ5NTAyM30.7EYC7MHyoL0DImolPpv2AENloW6w_MycF5LooBxZWI0
+Content-Type: application/json
+
+{
+    "currency": "etheur"
+}
+###
+
+POST http://localhost:3001/monitored-currencies/subscribe
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE4MzkyM2M4Y2ZlYzEwZjkyY2IwMTNkMDZlMWU3Y2RkNzg3NGFlYTUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NzAyMTMwMjQsImF1ZCI6IjkxMDk2MTA1NDg2OC0zczJ0ODdub3BidGNjdnJnaGoycWlvNHJtcjRlaHI2aC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwMjMyNTg0Mjk5MjIwMTQwOTk5MyIsImVtYWlsIjoiZnJhbmNvZmVycmVydkBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXpwIjoiOTEwOTYxMDU0ODY4LTNzMnQ4N25vcGJ0Y2N2cmdoajJxaW80cm1yNGVocjZoLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IkZyYW5jbyBGViIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0Q3dNelREa2pTV3p0WGtaTV9EUDFOcGY5OWpxenMxaUZ4bmtKMT1zOTYtYyIsImdpdmVuX25hbWUiOiJGcmFuY28iLCJmYW1pbHlfbmFtZSI6IkZWIiwiaWF0IjoxNjcwMjEzMzI0LCJleHAiOjE2NzAyMTY5MjQsImp0aSI6ImJiOTE0ZTI0MDU4YThlY2QwOThmOWE3MDQyYjQwYjAxZTQ3MTU4MTcifQ.o98VTx4SOMHx5HBJBRKXGNuWeiJCOD5rX6I2C4UKoMc7pdPXVhNSxprQc6czv-bWNXrtl6x8wJRq2_eHHRfV_fHwXNTI-IwObAIKbymSqUZiSnjzCzAt84rspwdXmcQMJZs51ts65uL6GtZiwARNWvaueK8U2rHFabnZ8FQ29Hh3MavloMm4Pz8s83srjlfLHz5pqtL5u_01Habx2hSNL-Gv-55Qrz0-ALbjJVxyxiuNocqUtPnEuLsv2rCsDIjL7FT8zkpfYq349GvF-Um7Sp_G9JrZ3g3r8uxAlzw7nPHG9DSNPpld2Be_bpgX8hD3iFX41R-8k0DgnqGbWIH0HQ
+Content-Type: application/json
+
+{
+    "currency": "btcusdt"
+}
+###
+
+GET http://localhost:3001/monitored-currencies/history
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imd1ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY3MDEyMjcyMH0.M5IDp1QqXjAUv4QudsyzTjD3VMw-G33_oGJ5d8S5dwY
+Content-Type: application/json
+
+###

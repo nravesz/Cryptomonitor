@@ -1,0 +1,30 @@
+{
+  "name": "grupo04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:back": "cd cryptomonitor && npm test",
+    "test:front": "cd front && npm test -- --watchAll=false",
+    "test": "npm run test:back && npm run test:front"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/7510-202202/grupo04.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/7510-202202/grupo04/issues"
+  },
+  "homepage": "https://gitlab.com/7510-202202/grupo04#readme",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "create-react-app": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.2",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3"
+  }
+}

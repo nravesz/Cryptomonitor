@@ -1,0 +1,17 @@
+{
+    "rules": [{
+        "name": "Insertar nombre",
+        "condition": {
+            "type": "",
+            "value": 0
+        },
+        "action": [{
+            "type": "",
+            "symbol": "",
+            "amount": {
+                "type": "",
+                "value": 0
+            }
+        }]
+    }]
+}

@@ -1,0 +1,35 @@
+{
+    "rules": [{
+        "name": "Comprar 100 ETH/BTC si vale menos que 15",
+        "condition": {
+            "type": "CALL",
+            "name": "<",
+            "arguments": [{
+                "type": "CALL",
+                "name": "LAST",
+                "arguments": {
+                    "type": "DATA",
+                    "symbol": "ETH/BTC",
+                    "from": 3600,
+                    "until": 0,
+                    "default": {
+                        "type": "CONSTANT",
+                        "name": 15
+                    }
+                }},
+                {
+                    "type": "CONSTANT",
+                    "value": 15
+                }
+            ]
+        },
+        "action": [{
+            "type": "BUY_MARKET",
+            "symbol": "ETH/BTC",
+            "amount": {
+                "type": "CONSTANT",
+                "value": 100
+            }
+        }]
+    }]
+}
